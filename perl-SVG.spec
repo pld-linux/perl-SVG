@@ -4,8 +4,8 @@
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	SVG
-Summary:	perl extension to generate SVG images
-Summary(pl):	rozszerzenie perla do generowania obrazow SVG
+Summary:	Perl extension to generate SVG images
+Summary(pl):	Rozszerzenie Perla do generowania obrazów SVG
 Name:		perl-SVG
 Version:	2.27
 Release:	1
@@ -19,20 +19,22 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-SVG.pm is a perl extention to generate stand-alone or inline SVG
-(scaleable vector graphics) images using the W3C SVG xml
+SVG.pm is a Perl extention to generate stand-alone or inline SVG
+(Scaleable Vector Graphics) images using the W3C SVG XML
 recommendation.
+
+%description -l pl
+SVG.pm to rozszerzenie Perla do generowania samodzielnych lub
+wbudowanych obrazów SVG (Scaleable Vector Graphics - skalowalna
+grafika wektorowa) z u¿yciem rekomendacji SVG SML W3C.
 
 %prep
 %setup -q -n %{pdir}-%{version}
 
 %build
-# Don't use pipes here: they generally don't work. Apply a patch.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
-# if module isn't noarch, use:
-# %{__make} OPTIMIZE="%{rpmcflags}"
 
 %{!?_without_tests:%{__make} test}
 
@@ -48,5 +50,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_vendorlib}/*
+%{perl_vendorlib}/SVG.pm
+%{perl_vendorlib}/SVG
 %{_mandir}/man3/*
