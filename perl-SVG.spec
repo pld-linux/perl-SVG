@@ -9,7 +9,7 @@ Summary(pl):	Rozszerzenie Perla do generowania obrazów SVG
 Name:		perl-SVG
 Version:	2.27
 Release:	1
-License:	Perl license
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{version}.tar.gz
 # Source0-md5:	d7af31798b18927ff1e569a1e2d3a7e6
