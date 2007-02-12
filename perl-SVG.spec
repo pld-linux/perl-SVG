@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	SVG
 Summary:	Perl extension to generate SVG images
-Summary(pl):	Rozszerzenie Perla do generowania obrazÛw SVG
+Summary(pl.UTF-8):   Rozszerzenie Perla do generowania obraz√≥w SVG
 Name:		perl-SVG
 Version:	2.33
 Release:	1
@@ -24,10 +24,10 @@ SVG.pm is a Perl extention to generate stand-alone or inline SVG
 (Scaleable Vector Graphics) images using the W3C SVG XML
 recommendation.
 
-%description -l pl
+%description -l pl.UTF-8
 SVG.pm to rozszerzenie Perla do generowania samodzielnych lub
-wbudowanych obrazÛw SVG (Scaleable Vector Graphics - skalowalna
-grafika wektorowa) z uøyciem rekomendacji SVG SML W3C.
+wbudowanych obraz√≥w SVG (Scaleable Vector Graphics - skalowalna
+grafika wektorowa) z u≈ºyciem rekomendacji SVG SML W3C.
 
 %prep
 %setup -q -n %{pdir}-%{version}
