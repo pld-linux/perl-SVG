@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	SVG
 Summary:	Perl extension to generate SVG images
-Summary(pl.UTF-8):   Rozszerzenie Perla do generowania obrazów SVG
+Summary(pl.UTF-8):	Rozszerzenie Perla do generowania obrazów SVG
 Name:		perl-SVG
 Version:	2.33
 Release:	1
