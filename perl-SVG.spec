@@ -7,13 +7,13 @@
 Summary:	Perl extension to generate SVG images
 Summary(pl.UTF-8):	Rozszerzenie Perla do generowania obrazów SVG
 Name:		perl-SVG
-Version:	2.33
-Release:	2
+Version:	2.49
+Release:	1
 # same as perl (general perl license)
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{version}.tar.gz
-# Source0-md5:	80aff1f4d107bf56696653895e5eed81
+# Source0-md5:	cd83d8ff1ef6dffdb8f60cff6d9a0278
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
