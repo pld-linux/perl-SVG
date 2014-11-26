@@ -1,9 +1,9 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	SVG
+%include	/usr/lib/rpm/macros.perl
 Summary:	Perl extension to generate SVG images
 Summary(pl.UTF-8):	Rozszerzenie Perla do generowania obrazów SVG
 Name:		perl-SVG
@@ -14,6 +14,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{version}.tar.gz
 # Source0-md5:	eb98588ae85277cd7769bce6ba3bc8f9
+URL:		http://search.cpan.org/dist/SVG-/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
