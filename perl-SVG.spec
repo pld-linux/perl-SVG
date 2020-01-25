@@ -3,7 +3,6 @@
 %bcond_without	tests	# do not perform "make test"
 
 %define		pdir	SVG
-%include	/usr/lib/rpm/macros.perl
 Summary:	Perl extension to generate SVG images
 Summary(pl.UTF-8):	Rozszerzenie Perla do generowania obrazów SVG
 Name:		perl-SVG
